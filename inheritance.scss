@@ -1,0 +1,23 @@
+%section{
+    color: #333;
+      border: 1px solid #bbb;
+      box-shadow: 1px 1px 0 #ddd;
+      margin: 0 0 10px;
+      padding: 15px;
+
+}
+
+.highlights {
+  @extend %section;
+  background-color: blue;
+}
+
+.experience {
+  @extend %section;
+  background-color: yellow;
+}
+
+.education {
+  @extend %section;
+  background-color: orange;
+}
