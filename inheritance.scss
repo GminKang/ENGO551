@@ -1,4 +1,8 @@
-%section{
+$colorBox: lightblue;
+body{
+    background-color: $colorBox;
+}
+.section{
     color: #333;
       border: 1px solid #bbb;
       box-shadow: 1px 1px 0 #ddd;
@@ -8,16 +12,28 @@
 }
 
 .highlights {
-  @extend %section;
+  @extend .section;
   background-color: blue;
 }
 
 .experience {
-  @extend %section;
+  @extend .section;
   background-color: yellow;
 }
 
 .education {
-  @extend %section;
+  @extend .section;
   background-color: orange;
 }
+
+@media (min-width: 500px) {
+    .box{
+        background-color: yellow;
+    }
+}
+
+@media (max-width: 499px) {
+  .box{
+      background-color: green;
+  }
+ }

@@ -1,19 +1,39 @@
-$color: lightblue;
 
-
-@media print {
-  .screen-only{
-      display: none;
-  }
+.section, .education, .experience, .highlights {
+    color: red;
+     border: 1px solid #bbb;
+     box-shadow: 1px 1px 0 #ddd;
+     margin: 0 0 10px;
+     padding: 15px;
 }
+
+.highlights {
+  background-color: black;
+}
+
+.experience {
+  background-color: yellow;
+}
+
+.education {
+  background-color: orange;
+}
+<!--mobile responsive -->
+
+@media screen and (max-width: 799px) {
+  .box{
+      background-color: green;
+  }
+ }
 
 .row::after {
   content: "";
   clear: both;
   display: table;
 }
-.aside {
-  background-color: #33b5e5;
+<!--id selector -->
+#aside {
+  background-color: red;
   padding: 15px;
   color: #ffffff;
   font-size: 12x;
@@ -27,7 +47,7 @@ $color: lightblue;
 }
 
 body{
-    background-color: $color;
+    background-color: lightblue;
 }
 table{
     border-collapse: collapse;
@@ -49,15 +69,10 @@ div{
 ::marker {
   color: blue;
 }
-#highlight {
 
-    color: red;
-    border: 3px solid steelblue
-}
 
-.box{
-    background-color: yellow;
-}
+
+
 a:hover {
   background-color: Gray;
 }
