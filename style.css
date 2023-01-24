@@ -1,4 +1,9 @@
 
+
+#round {
+  border-radius: 50%;
+  opacity: 0.7;
+}
 .section, .education, .experience, .highlights {
     color: red;
      border: 1px solid #bbb;
@@ -18,27 +23,14 @@
 .education {
   background-color: orange;
 }
-<!--mobile responsive -->
 
-@media screen and (max-width: 799px) {
-  .box{
-      background-color: green;
-  }
- }
 
 .row::after {
   content: "";
   clear: both;
   display: table;
 }
-<!--id selector -->
-#aside {
-  background-color: red;
-  padding: 15px;
-  color: #ffffff;
-  font-size: 12x;
 
-}
 .menu {
   padding: 3px;
   margin-bottom: 7px;
@@ -59,11 +51,11 @@ td{
     padding: 10px;
 }
 
-div{
-    font-size: 20px;
-    ul li{
-        font: italic 20px Georgia, sherif;
-    }
+div ul li{
+    color: green;
+
+    font: italic 20px Georgia, sherif;
+
 }
 
 ::marker {
@@ -76,6 +68,12 @@ div{
 a:hover {
   background-color: Gray;
 }
-b:active {
+a:active {
   background-color: red;
 }
+
+@media screen and (max-width: 799px) {
+    .box {
+      background-color: green;
+    }
+ }

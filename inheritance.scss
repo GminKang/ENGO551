@@ -26,14 +26,11 @@ body{
   background-color: orange;
 }
 
-@media (min-width: 500px) {
-    .box{
-        background-color: yellow;
+div{
+
+    ul li{
+        color green:
+        font: italic 20px Georgia, sherif;
+
     }
 }
-
-@media (max-width: 499px) {
-  .box{
-      background-color: green;
-  }
- }
